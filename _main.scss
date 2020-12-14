@@ -1,0 +1,193 @@
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #AA0601;
+    padding: 20px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+    li{
+        width: 120px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
+}
+.banner{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true")  no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 304px;
+    display: flex;
+    align-items: flex-end;  
+    .title{
+        width: 1150px;
+        display: flex;
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
+.select{
+    padding: 0.8rem 2.4rem;
+    span{
+        font-size: 1.6rem;
+    }
+    select{
+        width: 324px;
+        padding: 0.6rem;
+    }
+}
+.location{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+.item:nth-child(6){
+    border:none;
+}
+.item{
+    width: 30%;
+    margin: 0 5px;
+    border:1px solid rgba(0,0,0,.12549);
+    margin: 30px 10px;
+    .pic{
+        img{
+            width: 100%;
+            border:1px solid rgba(0,0,0,.12549);
+        }
+        h2{
+            font-size: 1.6rem;
+            padding: .8rem 1.6rem;
+        }
+    }
+    .txt{
+        padding: 10px;
+        border:1px solid rgba(0,0,0,.12549);
+        img{
+            padding: 0 5px;
+        }
+    }
+    .footer{
+        text-align: center;
+        background-color: #000000;
+        color:#fff;
+        padding: .8rem 0;
+        display:block;
+    }
+}
+footer{
+    background-color: #AA0601;
+    color:#fff;
+    margin-top: 20px;
+    .footer_header{
+        display:flex;
+        justify-content: space-between;
+        padding: 20px;
+        .menu{
+            display:flex;
+            a{
+                text-decoration: none;
+                margin: 15px;
+                display: block;
+                text-align:center;
+                width: 100px;
+                color:#fff;
+            }
+        }
+        .link img{
+            font-size: 2.4rem;
+        }
+    }
+    .contact {
+        margin-bottom: 20px;
+        img{
+        font-size: 2.8rem;
+        margin-right: 1.5rem;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+            font-size: 2.5rem;
+        }
+    }
+    .copyright{
+        display:flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-top: 1px solid #fff;
+        ul{
+            display:flex;
+            li{
+                padding: 0 10px;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:992px){
+    .header{
+        padding: 2.4rem 1.2rem;
+    }
+    .banner .container h1{
+        font-size: 3rem;
+    }
+    .item{
+        width: 45%;
+    }
+    link img{
+        font-size: 1.6rem;
+    }
+    footer .contact a{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 48%;
+                padding: 1.2rem 0;
+                border:1px solid #fff;
+                a{
+                    display:block;
+                }
+            }
+        }
+    }
+    .header a img{
+        margin-bottom: 1.2rem;
+    }
+    .banner .container h1{
+        font-size: 2rem;
+    }
+    .item{
+        width:100%;
+    }
+    footer .contact a{
+        font-size: 1.2rem;
+    }
+}
+
+
